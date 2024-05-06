@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+   
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+body{
+    margin: 0;
+    background-color: antiquewhite;
+   
+}
+/*----nav-start*/
+img{
+    height: 100px;
+    width:min-content;
+   
+}
+h1{
+    font-size: 2.5rem;
+    text-align:center;
+    color: aliceblue;
+
+}
+a{
+    text-decoration: none;
+    
+    color: aliceblue;
+    text-transform: capitalize;
+}
+/*----nav-bar end*/
+
+
+/*----for grid*/
+
+[class*='col-']{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    WIDTH:100%;
+ }
+/*---profile start*/
+.profile{
+    background-color: black;
+    color: azure;
+    margin-top: 2px;
+    
+}
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.profile:hover{
+    box-shadow: 5px 2px 4px 3px greenyellow;
+}
+/*profile end*/
+
+/*about me start*/
+  .aboutme{
+    background-color: blue;
+    text-align: center;
+    padding:10px ;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+
+  .aboutme-hr{
+       border: 2px solid black;
+       
+  }
+ 
+
+  .aboutme::after{
+    content: '';
+  clear: both;
+    display: table;
+    margin: 10px;
+}
+
+
+/*about me end*/
+
+/*education experiance start*/
+.professional-ex{
+    padding: 1% 0%;
+}
+
+.card{
+    background-color: blueviolet;
+    padding:15px ;
+    color: white;
+    height:700px;
+    margin: 5px;
+    transition: 0.3s;
+
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px 5px black;
+}
+.card-icon{
+    text-align: center;
+}
+  
+.card-icon img{
+    text-align: center;
+    margin-top:50px;
+    width:100px;
+}
+.card-title{
+    
+    background-color: gray;
+    text-align: center;
+     padding: 2px;
+    color: white;
+    
+   
+
+}
+.card-desc{
+    margin-top:5px;
+    
+}
+.skill-container{
+    padding-right: 45;
+}
+.skill-container li{
+    list-style-type: none;
+    font-weight: bold;
+    margin: 30px 10px;
+    position: relative;
+   
+    text-transform: uppercase;
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    top:calc(100% + 5px);
+    left:0px;
+    background-color:rgb(86,86,153,.5);
+    height: 10px;
+    width: 100%;
+    border-radius: 1000px;
+}
+.skill-container li::after{
+    content: '';
+    position: absolute;
+    top:calc(100% + 5px);
+    left:0px;
+    background-color:rgb(12, 12, 185);
+    height: 10px;
+    width: 0;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+}
+.skill-container li.html::after{
+    animation-name: html;
+    
+}
+@keyframes html{
+    To{
+        width:90%; 
+    }
+}
+.skill-container li.css::after{
+    animation-name:css;
+    
+}
+@keyframes css{
+    To{
+        width:80%; 
+    }
+}
+.skill-container li.java::after{
+    animation-name:java;
+    
+}
+@keyframes java{
+    To{
+        width:70%; 
+    }
+}
+
+
+.professional-ex::after{
+    content: '';
+  clear: both;
+    display: table;
+
+}
+/*education experiance end*/
+
+/*achivment-contact-start*/
+.achievement-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+}
+.contact{
+    padding:1% 7% ;
+    text-align: center;
+
+}
+.contact input,textarea{
+    width:100%;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize:none;
+}
+.contact button{
+    background-color:black;
+    border-radius: 12px;
+    border:none;
+    color:white;
+    cursor: pointer;
+    padding: 15px;
+    margin:10px;
+    width:100px;
+
+}
+.contact-link{
+    text-align: center;
+}
+.media-button .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    margin:10px;
+    width:50px;
+    background-color: aliceblue;
+}
+.btn:hover{
+    background-color: antiquewhite;
+}
+.achievement-contact::after{
+    content: '';
+  clear: both;
+    display: table;}
+/*achivment-contact-end*/
+/*footer start*/
+  .footer{
+    background-color: black;
+    color:white;
+   
+    text-align: center;
+    padding: 20px;
+  }
+  .footer-menu a{
+    display: block;
+    margin: 15px 0px;
+    font-size: 1rem;
+  }
+  .footer-menu a:hover{
+  color:gray;
+  }
+.footer::after{
+    display: table;
+    content:'';
+    clear: both;
+}
+
+/*footer end*/
+
